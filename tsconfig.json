@@ -1,0 +1,18 @@
+{
+    "version": "2.0.2",
+    "compilerOptions": {
+        "lib": ["es5", "es6", "dom"],
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true
+    },
+    "exclude": [
+        "build",
+        "node_modules",
+        "typings/browser.d.ts",
+        "typings/browser"
+    ]
+}
