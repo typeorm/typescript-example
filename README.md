@@ -1,6 +1,7 @@
 # Example how to use TypeORM with TypeScript
 
-1. clone repository
+1. clone repository 
 2. run `npm i`
-3. run `npm start`
-4. enjoy!
+3. edit `./src/index.ts` and change your database configuration (you can also change a database type, but don't forget to install specific database drivers)
+4. run `npm start`
+5. enjoy!
