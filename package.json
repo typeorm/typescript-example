@@ -28,7 +28,7 @@
   "dependencies": {
     "pg": "^6.1.0",
     "reflect-metadata": "^0.1.8",
-    "typeorm": "0.0.3"
+    "typeorm": "0.0.4"
   },
   "scripts": {
     "start": "tsc && node src/index.js"

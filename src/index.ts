@@ -5,11 +5,11 @@ import {Category} from "./entity/Category";
 
 createConnection({
     driver: {
-        type: "postgres",
+        type: "postgres", // to use mysql instead, just change it to "mysql", change other params (port, credentials) and install driver: npm i mysql
         host: "localhost",
         port: 5432,
         username: "test",
-        password: "admin",
+        password: "test",
         database: "test"
     },
     entities: [
