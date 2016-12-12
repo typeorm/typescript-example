@@ -3,21 +3,8 @@ import {createConnection} from "typeorm";
 import {Post} from "./entity/Post";
 import {Category} from "./entity/Category";
 
-createConnection({
-    driver: {
-        type: "postgres", // to use mysql instead, just change it to "mysql", change other params (port, credentials) and install driver: npm i mysql
-        host: "localhost",
-        port: 5432,
-        username: "test",
-        password: "test",
-        database: "test"
-    },
-    entities: [
-        Post,
-        Category
-    ],
-    autoSchemaSync: true
-}).then(async connection => {
+// connection settings are in the "ormconfig.json" file
+createConnection().then(async connection => {
 
     const category1 = new Category();
     category1.name = "TypeScript";
