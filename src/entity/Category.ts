@@ -1,6 +1,6 @@
-import {Table, PrimaryColumn, Column} from "typeorm";
+import {Entity, PrimaryColumn, Column} from "typeorm";
 
-@Table()
+@Entity()
 export class Category {
 
     @PrimaryColumn("int", { generated: true })
