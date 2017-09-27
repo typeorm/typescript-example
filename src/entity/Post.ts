@@ -1,10 +1,10 @@
-import {Entity, PrimaryColumn, Column, ManyToMany, JoinTable} from "typeorm";
+import {Column, Entity, JoinTable, ManyToMany, PrimaryGeneratedColumn} from "typeorm";
 import {Category} from "./Category";
 
 @Entity()
 export class Post {
 
-    @PrimaryColumn("int", { generated: true })
+    @PrimaryGeneratedColumn()
     id: number;
 
     @Column()
@@ -13,9 +13,7 @@ export class Post {
     @Column("text")
     text: string;
 
-    @ManyToMany(type => Category, {
-        cascadeInsert: true
-    })
+    @ManyToMany(type => Category)
     @JoinTable()
     categories: Category[];
 

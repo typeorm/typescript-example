@@ -1,9 +1,9 @@
-import {Entity, PrimaryColumn, Column} from "typeorm";
+import {Column, PrimaryGeneratedColumn, Entity} from "typeorm";
 
 @Entity()
 export class Category {
 
-    @PrimaryColumn("int", { generated: true })
+    @PrimaryGeneratedColumn()
     id: number;
 
     @Column()

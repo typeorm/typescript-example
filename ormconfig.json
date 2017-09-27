@@ -1,26 +1,25 @@
-[
-  {
-    "name": "default",
-    "type": "mysql",
-    "host": "localhost",
-    "port": 3306,
-    "username": "test",
-    "password": "test",
-    "database": "test",
-    "autoSchemaSync": true,
-    "entities": [
-      "src/entity/*.js"
-    ],
-    "subscribers": [
-      "src/subscriber/*.js,"
-    ],
-    "migrations": [
-      "src/migration/*.js"
-    ],
-    "cli": {
-      "entitiesDir": "src/entity",
-      "migrationsDir": "src/migration",
-      "subscribersDir": "src/subscriber"
-    }
+{
+  "name": "default",
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "test",
+  "password": "test",
+  "database": "test",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "src/entity/*.js"
+  ],
+  "subscribers": [
+    "src/subscriber/*.js"
+  ],
+  "migrations": [
+    "src/migration/*.js"
+  ],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
   }
-]
+}

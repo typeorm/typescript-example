@@ -23,15 +23,16 @@
     "typeorm-example"
   ],
   "devDependencies": {
-    "typescript": "^2.4.2"
+    "typescript": "^2.1.5"
   },
   "dependencies": {
-    "@types/node": "^8.0.19",
+    "@types/node": "^8.0.29",
     "mysql": "^2.14.1",
-    "reflect-metadata": "^0.1.9",
-    "typeorm": "0.1.0-alpha.33"
+    "reflect-metadata": "^0.1.10",
+    "typeorm": "0.1.0-alpha.49"
   },
   "scripts": {
-    "start": "tsc && node src/index.js"
+    "start": "tsc && node src/index.js",
+    "typeorm": "./node_modules/.bin/typeorm -v"
   }
 }
