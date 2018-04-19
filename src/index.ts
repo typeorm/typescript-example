@@ -1,4 +1,3 @@
-import "reflect-metadata";
 import {createConnection} from "typeorm";
 import {Post} from "./entity/Post";
 import {Category} from "./entity/Category";
